@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { askDocbot, clearStoredKey, getStoredKey, type ChatTurn } from '../lib/anthropic'
 import { retrieve } from '../lib/kb'
-import { renderMarkdown } from '../lib/markdown'
+import { renderMarkdown, sanitizeUrl } from '../lib/markdown'
 import { clearHistory, loadHistory, saveHistory, type StoredMessage } from '../lib/persist'
 import { CopyButton } from './CopyButton'
 import { KeyPanel } from './KeyPanel'
@@ -192,7 +192,7 @@ export function Chat({ onResetKey }: { onResetKey: () => void }) {
                         {m.sources.map((s) => (
                           <li key={s.id}>
                             <a
-                              href={s.url}
+                              href={sanitizeUrl(s.url)}
                               target="_blank"
                               rel="noopener noreferrer"
                               className="underline hover:text-[var(--ink)]"

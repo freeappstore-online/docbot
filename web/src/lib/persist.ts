@@ -53,9 +53,31 @@ export function clearHistory(): void {
 function isValidMessage(m: unknown): m is StoredMessage {
   if (!m || typeof m !== 'object') return false
   const msg = m as Record<string, unknown>
-  return (
-    typeof msg.id === 'string' &&
-    (msg.role === 'user' || msg.role === 'assistant') &&
-    typeof msg.content === 'string'
-  )
+  if (
+    typeof msg.id !== 'string' ||
+    (msg.role !== 'user' && msg.role !== 'assistant') ||
+    typeof msg.content !== 'string'
+  ) {
+    return false
+  }
+  // `sources` is optional but, if present, must be an array of well-shaped
+  // chunks. Otherwise a tampered localStorage entry could feed bad URLs into
+  // the source-link <a href> in Chat.tsx (defense-in-depth alongside sanitizeUrl).
+  if (msg.sources !== undefined) {
+    if (!Array.isArray(msg.sources)) return false
+    for (const s of msg.sources) {
+      if (!s || typeof s !== 'object') return false
+      const src = s as Record<string, unknown>
+      if (
+        typeof src.id !== 'string' ||
+        typeof src.url !== 'string' ||
+        typeof src.title !== 'string' ||
+        typeof src.heading !== 'string' ||
+        typeof src.text !== 'string'
+      ) {
+        return false
+      }
+    }
+  }
+  return true
 }
