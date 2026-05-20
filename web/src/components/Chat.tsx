@@ -3,6 +3,8 @@ import { askDocbot, clearStoredKey, getStoredKey, type ChatTurn } from '../lib/a
 import { retrieve } from '../lib/kb'
 import { renderMarkdown } from '../lib/markdown'
 import { clearHistory, loadHistory, saveHistory, type StoredMessage } from '../lib/persist'
+import { CopyButton } from './CopyButton'
+import { KeyPanel } from './KeyPanel'
 
 type Message = StoredMessage
 
@@ -19,6 +21,10 @@ export function Chat({ onResetKey }: { onResetKey: () => void }) {
   const [busy, setBusy] = useState(false)
   const [showingKeyPanel, setShowingKeyPanel] = useState(false)
   const scrollerRef = useRef<HTMLDivElement>(null)
+  // Ref-based guard against two rapid send() calls landing before React commits
+  // the busy=true state (e.g., double-tapping a starter button). State alone
+  // isn't enough — the check would see the stale value.
+  const inFlightRef = useRef(false)
 
   useEffect(() => {
     scrollerRef.current?.scrollTo({ top: scrollerRef.current.scrollHeight, behavior: 'smooth' })
@@ -35,7 +41,8 @@ export function Chat({ onResetKey }: { onResetKey: () => void }) {
       return
     }
     const trimmed = text.trim()
-    if (!trimmed || busy) return
+    if (!trimmed || inFlightRef.current) return
+    inFlightRef.current = true
 
     const userMsg: Message = { id: crypto.randomUUID(), role: 'user', content: trimmed }
     const placeholder: Message = { id: crypto.randomUUID(), role: 'assistant', content: '' }
@@ -69,6 +76,7 @@ export function Chat({ onResetKey }: { onResetKey: () => void }) {
         ),
       )
     } finally {
+      inFlightRef.current = false
       setBusy(false)
     }
   }
@@ -231,87 +239,3 @@ export function Chat({ onResetKey }: { onResetKey: () => void }) {
   )
 }
 
-function KeyPanel({ onClose, onReplace }: { onClose: () => void; onReplace: () => void }) {
-  const [revealed, setRevealed] = useState(false)
-  const [copied, setCopied] = useState(false)
-  const key = getStoredKey() ?? ''
-  // Mask: keep "sk-ant-" prefix + last 4 chars, hide the middle.
-  const masked = key.length > 12 ? `${key.slice(0, 7)}${'•'.repeat(8)}${key.slice(-4)}` : '•'.repeat(key.length)
-
-  async function copy() {
-    try {
-      await navigator.clipboard.writeText(key)
-      setCopied(true)
-      setTimeout(() => setCopied(false), 1400)
-    } catch {
-      // Clipboard API unavailable.
-    }
-  }
-
-  return (
-    <div className="rounded-2xl border border-[var(--line)] bg-[var(--panel-strong)] p-4 shadow-[var(--shadow-card)]">
-      <div className="flex items-center justify-between gap-2">
-        <span className="text-xs font-bold uppercase tracking-[0.16em] text-[var(--muted)]">Anthropic key</span>
-        <button
-          type="button"
-          onClick={onClose}
-          className="text-xs text-[var(--muted)] hover:text-[var(--ink)]"
-          aria-label="Close"
-        >
-          ✕
-        </button>
-      </div>
-      <div className="mt-2 flex flex-wrap items-center gap-2">
-        <code className="flex-1 break-all rounded-lg bg-[var(--paper-deep)] px-3 py-2 font-mono text-xs text-[var(--ink)]">
-          {revealed ? key : masked}
-        </code>
-        <button
-          type="button"
-          onClick={() => setRevealed((v) => !v)}
-          className="rounded-lg border border-[var(--line)] px-3 py-2 text-xs text-[var(--muted)] hover:text-[var(--ink)]"
-        >
-          {revealed ? 'hide' : 'show'}
-        </button>
-        <button
-          type="button"
-          onClick={copy}
-          className="rounded-lg border border-[var(--line)] px-3 py-2 text-xs text-[var(--muted)] hover:text-[var(--ink)]"
-        >
-          {copied ? 'copied' : 'copy'}
-        </button>
-        <button
-          type="button"
-          onClick={onReplace}
-          className="rounded-lg border border-[var(--line)] px-3 py-2 text-xs text-[var(--accent-deep)] hover:text-[var(--ink)]"
-        >
-          replace
-        </button>
-      </div>
-      <p className="mt-2 text-[0.7rem] text-[var(--muted)]">
-        Stored only in this browser's localStorage. Sent only to api.anthropic.com.
-      </p>
-    </div>
-  )
-}
-
-function CopyButton({ text }: { text: string }) {
-  const [copied, setCopied] = useState(false)
-  async function copy() {
-    try {
-      await navigator.clipboard.writeText(text)
-      setCopied(true)
-      setTimeout(() => setCopied(false), 1400)
-    } catch {
-      // Clipboard API unavailable (insecure context, older browser). No-op.
-    }
-  }
-  return (
-    <button
-      type="button"
-      onClick={copy}
-      className="px-2 text-[0.65rem] uppercase tracking-[0.14em] text-[var(--muted)] hover:text-[var(--ink)]"
-    >
-      {copied ? 'copied' : 'copy'}
-    </button>
-  )
-}

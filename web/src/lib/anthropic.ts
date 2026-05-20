@@ -17,11 +17,20 @@ export function getStoredKey(): string | null {
 }
 
 export function setStoredKey(key: string): void {
-  localStorage.setItem(STORAGE_KEY, key)
+  try {
+    localStorage.setItem(STORAGE_KEY, key)
+  } catch {
+    // Storage unavailable (private mode, quota). Caller will detect a missing
+    // key on next read and re-prompt — better than crashing the save flow.
+  }
 }
 
 export function clearStoredKey(): void {
-  localStorage.removeItem(STORAGE_KEY)
+  try {
+    localStorage.removeItem(STORAGE_KEY)
+  } catch {
+    // ignore
+  }
 }
 
 export interface ChatTurn {
@@ -81,30 +90,51 @@ export async function askDocbot({ question, context, history, apiKey, signal, on
   }
   if (!res.body) throw new Error('No response body to stream.')
 
-  const reader = res.body.getReader()
+  await parseSseStream(res.body, onToken)
+}
+
+// Parses an Anthropic-style SSE stream and forwards every text delta to onToken.
+// Exported for testing. Handles the final unterminated line on stream end —
+// previously a final "data: …" payload with no trailing newline would be dropped.
+export async function parseSseStream(
+  body: ReadableStream<Uint8Array>,
+  onToken: (text: string) => void,
+): Promise<void> {
+  const reader = body.getReader()
   const decoder = new TextDecoder()
   let buffer = ''
+
+  const flushLine = (line: string) => {
+    if (!line.startsWith('data: ')) return
+    const payload = line.slice(6).trim()
+    if (!payload || payload === '[DONE]') return
+    try {
+      const evt = JSON.parse(payload) as {
+        type?: string
+        delta?: { type?: string; text?: string }
+      }
+      if (
+        evt.type === 'content_block_delta' &&
+        evt.delta?.type === 'text_delta' &&
+        evt.delta.text
+      ) {
+        onToken(evt.delta.text)
+      }
+    } catch {
+      // Skip malformed payloads. Network or upstream noise.
+    }
+  }
+
   while (true) {
     const { value, done } = await reader.read()
     if (done) break
     buffer += decoder.decode(value, { stream: true })
     const lines = buffer.split('\n')
     buffer = lines.pop() ?? ''
-    for (const line of lines) {
-      if (!line.startsWith('data: ')) continue
-      const payload = line.slice(6).trim()
-      if (!payload || payload === '[DONE]') continue
-      try {
-        const evt = JSON.parse(payload) as {
-          type: string
-          delta?: { type?: string; text?: string }
-        }
-        if (evt.type === 'content_block_delta' && evt.delta?.type === 'text_delta' && evt.delta.text) {
-          onToken(evt.delta.text)
-        }
-      } catch {
-        // Skip malformed lines.
-      }
-    }
+    for (const line of lines) flushLine(line)
   }
+
+  // Flush whatever the decoder still holds plus any unterminated final line.
+  buffer += decoder.decode()
+  if (buffer) flushLine(buffer)
 }

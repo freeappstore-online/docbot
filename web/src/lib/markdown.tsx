@@ -7,6 +7,46 @@
 
 import type { ReactNode } from 'react'
 
+// Link URLs are passed straight into <a href>. Block dangerous schemes — Claude
+// shouldn't emit them, but a prompt-injected response could. Whitelist the
+// schemes that are safe in chat context (http(s), mailto, tel, plus
+// protocol-relative and same-origin relative links).
+export function sanitizeUrl(url: string): string {
+  const trimmed = url.trim()
+  if (!trimmed) return '#'
+  // Strip ASCII control chars (including tab/newline) that browsers ignore but
+  // would bypass naive scheme matching, e.g., "java\tscript:alert(1)".
+  const cleaned = stripControls(trimmed)
+  // Relative paths, query, hash, protocol-relative — all safe.
+  if (
+    cleaned.startsWith('/') ||
+    cleaned.startsWith('?') ||
+    cleaned.startsWith('#') ||
+    cleaned.startsWith('./') ||
+    cleaned.startsWith('../') ||
+    cleaned.startsWith('//')
+  ) {
+    return cleaned
+  }
+  // Absolute URL: only http(s) + mailto + tel are allowed.
+  const schemeMatch = cleaned.match(/^([a-zA-Z][a-zA-Z0-9+.-]*):/)
+  if (!schemeMatch) return cleaned // No scheme → treat as relative text.
+  const scheme = schemeMatch[1].toLowerCase()
+  if (scheme === 'http' || scheme === 'https' || scheme === 'mailto' || scheme === 'tel') {
+    return cleaned
+  }
+  return '#'
+}
+
+function stripControls(s: string): string {
+  let out = ''
+  for (let i = 0; i < s.length; i++) {
+    const code = s.charCodeAt(i)
+    if (code > 0x1f && code !== 0x7f) out += s[i]
+  }
+  return out
+}
+
 export function renderMarkdown(src: string): ReactNode {
   const blocks = src.replace(/\r\n/g, '\n').split(/\n\s*\n/)
   return blocks.map((block, i) => {
@@ -50,7 +90,7 @@ function renderInline(text: string): ReactNode[] {
     {
       re: /\[([^\]]+)\]\(([^)]+)\)/,
       node: (m) => (
-        <a href={m[2]} target="_blank" rel="noopener noreferrer" className="underline hover:text-[var(--accent)]">
+        <a href={sanitizeUrl(m[2])} target="_blank" rel="noopener noreferrer" className="underline hover:text-[var(--accent)]">
           {m[1]}
         </a>
       ),
