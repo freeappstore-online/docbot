@@ -6,3 +6,6 @@ dist
 
 # TypeScript incremental build cache
 *.tsbuildinfo
+
+# Test coverage output
+coverage/

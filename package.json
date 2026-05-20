@@ -9,6 +9,8 @@
     "build": "pnpm --filter @docbot/web build",
     "preview": "pnpm --filter @docbot/web preview",
     "typecheck": "pnpm --filter @docbot/web exec tsc -b",
+    "test": "pnpm --filter @docbot/web test",
+    "coverage": "pnpm --filter @docbot/web coverage",
     "build:kb": "node scripts/build-kb.mjs"
   }
 }
