@@ -1,0 +1,651 @@
+{
+  "generatedAt": "2026-05-20T09:25:02.256Z",
+  "source": "https://freeappstore.pages.dev",
+  "pages": 9,
+  "chunks": [
+    {
+      "id": "/#introduction-0",
+      "url": "https://freeappstore.pages.dev/",
+      "title": "FreeAppStore — Beautiful, Free-Forever Web Apps",
+      "heading": "Introduction",
+      "text": "AI Assistant Simple Search"
+    },
+    {
+      "id": "/#all-apps-1",
+      "url": "https://freeappstore.pages.dev/",
+      "title": "FreeAppStore — Beautiful, Free-Forever Web Apps",
+      "heading": "All Apps",
+      "text": "35 total Featured Top Rated Most Active Popular Language Learning Open Math Learning Open Music Discovery Open Quiz Learning Open Books Learning Open Life Learning Open Messenger Social Open Bandmates Social Open Meetup Social Open Calculator Utilities Open Chess Clock Utilities Open Timer Utilities Open Converter Utilities Open Notes Utilities Open Pomodoro Utilities Open QR Code Utilities Open Color Picker Utilities Open Password Utilities Open Whiteboard Utilities Open Flashcards Learning Open Habits Utilities Open Weather Utilities Open Stopwatch Utilities Open Mandarin English Social Open snowman News & Weather Open typeflow Brain Training Open streak Health & Fitness Open spending Finance Open artout Social Open done-todo Productivity Open hello-world-greeter Other (specify in description) Open skyview-weather News & Weather Open todoly Productivity Open whenly Productivity Open kanban Productivity Open No apps match your search here."
+    },
+    {
+      "id": "/#also-matching-on-freegamestore-2",
+      "url": "https://freeappstore.pages.dev/",
+      "title": "FreeAppStore — Beautiful, Free-Forever Web Apps",
+      "heading": "Also matching on FreeGameStore",
+      "text": "No app selected Pick any app to launch it here Click an app on the left and it loads instantly in this pane. Use ↗ to pop it into a new tab. Looking for games? Visit FreeGameStore — free-forever web games."
+    },
+    {
+      "id": "/#where-everything-lives-3",
+      "url": "https://freeappstore.pages.dev/",
+      "title": "FreeAppStore — Beautiful, Free-Forever Web Apps",
+      "heading": "Where everything lives",
+      "text": "A map of every URL across the stores. Bookmark this page. For users freeappstore.online — free apps (you are here) freegamestore.online — free games freewebstore.online — one-page sites For developers create.freeappstore.online — VibeCode (browser scaffolder) /build-with-ai — AI-assisted dev guide /skills.md — SDK reference github.com/freeappstore-online — source CLI npm i -g @freeappstore/cli fas init <id> fas publish fas check Admin / submission admin.freeappstore.online — admin UI (Google sign-in) file a creator application Pro sister stores proappstore.online — pro apps console.proappstore.online — pro dev console dashboard.proappstore.online — pro user account prowebstore.online — KG-CMS sites Backend APIs api.freeappstore.online — free side api.proappstore.online — pro side Reference /about · /pricing · /guidelines /quality — store audit dashboard /privacy · /terms All five orgs on GitHub freeappstore-online freegamestore-online freewebstore-online proappstore-online prowebstore-online"
+    },
+    {
+      "id": "/about#about-freeappstore-0",
+      "url": "https://freeappstore.pages.dev/about",
+      "title": "About — FreeAppStore",
+      "heading": "About FreeAppStore",
+      "text": "An open platform for free, high-quality web applications — no ads, no paywalls, no subscriptions, no catch. Everything we build and host is 100% free, forever."
+    },
+    {
+      "id": "/about#our-philosophy-1",
+      "url": "https://freeappstore.pages.dev/about",
+      "title": "About — FreeAppStore",
+      "heading": "Our Philosophy",
+      "text": "Free means free. Not freemium. Not free-with-ads. Not free-for-now. Not free-until-we-get-acquired. Every app on this platform is genuinely, permanently free to use. There is no business model. There is no monetization strategy. There is no plan to \"convert\" you into a paying customer. We believe that certain tools should simply exist for people to use, without friction, without commerce, without compromise."
+    },
+    {
+      "id": "/about#free-means-free-2",
+      "url": "https://freeappstore.pages.dev/about",
+      "title": "About — FreeAppStore",
+      "heading": "Free means free",
+      "text": "No freemium tricks. No ads. No \"plans.\" These apps will never ask you for money. If it's on FreeAppStore, it's yours to use forever at no cost."
+    },
+    {
+      "id": "/about#real-apps-not-websites-3",
+      "url": "https://freeappstore.pages.dev/about",
+      "title": "About — FreeAppStore",
+      "heading": "Real apps, not websites",
+      "text": "Every app is a Progressive Web App. Install it on your home screen, use it offline, get a native app experience. No app store required."
+    },
+    {
+      "id": "/about#mobile-first-works-everywhere-4",
+      "url": "https://freeappstore.pages.dev/about",
+      "title": "About — FreeAppStore",
+      "heading": "Mobile-first, works everywhere",
+      "text": "Built for phones first, then scaled up to tablets and desktops. Responsive, fast, and touch-friendly on every device."
+    },
+    {
+      "id": "/about#private-by-default-5",
+      "url": "https://freeappstore.pages.dev/about",
+      "title": "About — FreeAppStore",
+      "heading": "Private by default",
+      "text": "No accounts. No tracking. No analytics. No cookies. Your data stays on your device. We can't see what you do because we never look."
+    },
+    {
+      "id": "/about#how-the-apps-work-6",
+      "url": "https://freeappstore.pages.dev/about",
+      "title": "About — FreeAppStore",
+      "heading": "How the apps work",
+      "text": "Our catalog spans 27+ apps covering everyday productivity and utility needs — timers, calculators, note-taking, habit trackers, flashcards, a Pomodoro clock, QR code generator, weather, currency converter, password generator, a whiteboard, and more. Every app runs instantly in the browser with no downloads or accounts required. Each app is a standalone Progressive Web App (PWA) hosted on its own subdomain. When you visit an app, it loads in your browser like any website — but it can do much more: Install to home screen — Tap \"Add to Home Screen\" and the app gets its own icon, launches without browser chrome, and feels native. Works offline — Service workers cache the app so it works without an internet connection. Saves your progress locally — All data is stored in your browser's local storage, on your device, under your control. Updates automatically — When you're online, the app silently updates to the latest version."
+    },
+    {
+      "id": "/about#freeappstore-and-proappstore-7",
+      "url": "https://freeappstore.pages.dev/about",
+      "title": "About — FreeAppStore",
+      "heading": "FreeAppStore and ProAppStore",
+      "text": "We are transparent about what costs money. Some features — cloud sync, AI assistance, collaboration, priority support — require servers and ongoing resources. That's what ProAppStore.online is for. FreeAppStore Always free, forever No account required Core features, well-executed Offline-capable PWA Open source (MIT) Local-only data storage ProAppStore Advanced features Cloud sync across devices AI-powered assistance Collaboration tools Priority support Transparent, fair pricing The two platforms are intertwined — they share DNA. You can always switch between the free and pro version of any app. If you're happy with free, stay there forever. If you want advanced features, Pro is one click away. No pressure, no dark patterns, no lock-in. Your local data is always yours."
+    },
+    {
+      "id": "/about#about-proappstore-8",
+      "url": "https://freeappstore.pages.dev/about",
+      "title": "About — FreeAppStore",
+      "heading": "About ProAppStore",
+      "text": "ProAppStore is the paid counterpart for users who want cloud sync, AI features, and advanced capabilities. It exists so that FreeAppStore can exist — revenue from Pro funds the infrastructure that keeps everything running. Visit ProAppStore.online | SDK Docs | Roadmap | Pricing"
+    },
+    {
+      "id": "/about#freegamestore-9",
+      "url": "https://freeappstore.pages.dev/about",
+      "title": "About — FreeAppStore",
+      "heading": "FreeGameStore",
+      "text": "FreeGameStore.online is our sister platform for games. Same principles — free forever, no tracking, open source — but focused on browser-based games. If you're looking for games rather than apps, head there."
+    },
+    {
+      "id": "/about#by-the-numbers-10",
+      "url": "https://freeappstore.pages.dev/about",
+      "title": "About — FreeAppStore",
+      "heading": "By the numbers",
+      "text": "27 apps and growing. Every one is free, open source, and built by our community of creators."
+    },
+    {
+      "id": "/about#creator-program-11",
+      "url": "https://freeappstore.pages.dev/about",
+      "title": "About — FreeAppStore",
+      "heading": "Creator Program",
+      "text": "FreeAppStore is also a platform for indie developers and creators. We provide zero-cost hosting on Cloudflare's global edge network, professional deployment pipelines, and a modern tech stack built on TypeScript, React, Vite, and Tailwind CSS. Developers push code to main and it's live — instant provisioning, automatic scaling, zero infrastructure management. We handle the hard parts so creators can focus on building great software. Apply with your idea, get provisioned with a repo and subdomain, and start shipping. Auto-deploy on push, listed in the store, your name on it. Learn more on the Build page &rarr;"
+    },
+    {
+      "id": "/about#our-mission-12",
+      "url": "https://freeappstore.pages.dev/about",
+      "title": "About — FreeAppStore",
+      "heading": "Our Mission",
+      "text": "Useful software should be accessible to everyone. We believe the best apps don't need to monetize their users. Whether you're a student looking for a free study timer, a developer who wants to ship a side project to the world, or someone who just needs a quick tool that works — we built this for you."
+    },
+    {
+      "id": "/about#open-source-13",
+      "url": "https://freeappstore.pages.dev/about",
+      "title": "About — FreeAppStore",
+      "heading": "Open Source",
+      "text": "Every app on this platform is open source under the MIT license. You can read the code, verify our privacy claims, report issues, contribute improvements, or fork any app and make it your own. View our GitHub organization &rarr;"
+    },
+    {
+      "id": "/get-started#start-building-in-60-seconds-0",
+      "url": "https://freeappstore.pages.dev/get-started",
+      "title": "Get Started — FreeAppStore",
+      "heading": "Start building in 60 seconds",
+      "text": "Three commands. Free hosting. Auto-deploy. Your app is live. Terminal Replay"
+    },
+    {
+      "id": "/get-started#your-app-is-running-locally--1",
+      "url": "https://freeappstore.pages.dev/get-started",
+      "title": "Get Started — FreeAppStore",
+      "heading": "Your app is running locally.",
+      "text": "Now build it with your AI tool, then submit it to get listed in the store with free hosting. Full build guide Guidelines !-- HOW TO PUBLISH -->"
+    },
+    {
+      "id": "/get-started#when-you-re-ready-to-publish-2",
+      "url": "https://freeappstore.pages.dev/get-started",
+      "title": "Get Started — FreeAppStore",
+      "heading": "When you're ready to publish",
+      "text": "After building and testing locally, submit your app to get free hosting and a subdomain. Publishing # Run compliance checks first my-app $ fas check ✓ All checks passed # Submit to the store my-app $ fas publish Submitting my-app for review... ✓ Submission created What happens next: 1. We review your app (usually within 48 hours) 2. We create a repo + hosting + subdomain for you 3. You push your code, it auto-deploys Your app will be at: https://my-app.freeappstore.online Don't want to wait? Use VibeCode to build and deploy instantly in your browser — no CLI, no review wait. !-- AI TOOL EXAMPLES -->"
+    },
+    {
+      "id": "/get-started#now-use-any-ai-tool-to-build-3",
+      "url": "https://freeappstore.pages.dev/get-started",
+      "title": "Get Started — FreeAppStore",
+      "heading": "Now use any AI tool to build",
+      "text": "After fas init, your project has a CLAUDE.md that points to the platform guide. Open any AI tool and start building. !-- Claude Code --> Claude Code my-app $ claude Claude reads CLAUDE.md automatically. It already knows the platform SDK, design system, and deploy flow. > Build a pomodoro timer with 25/5/15 minute intervals. Save session count in localStorage. Play a sound when done. !-- Cursor --> Cursor 1. Open the project folder in Cursor 2. Create .cursorrules in the root with one line: See https://freeappstore.online/skills.md for platform conventions. 3. Open Composer (Cmd+I) and describe what you want to build. Cursor reads .cursorrules and follows the platform rules. !-- Codex CLI --> Codex CLI (OpenAI) my-app $ codex Create AGENTS.md in the root with one line: See https://freeappstore.online/skills.md for platform conventions. Codex reads AGENTS.md and knows the platform. > Build a unit converter for length, weight, and temperature. !-- GitHub Copilot --> GitHub Copilot 1. Open the project in VS Code with Copilot enabled 2. Create .github/copilot-instructions.md with one line: See https://freeappstore.online/skills.md for platform conventions. 3. Open Copilot Chat (Ctrl+Shift+I)"
+    },
+    {
+      "id": "/get-started#now-use-any-ai-tool-to-build-4",
+      "url": "https://freeappstore.pages.dev/get-started",
+      "title": "Get Started — FreeAppStore",
+      "heading": "Now use any AI tool to build",
+      "text": "and describe your app. !-- Any tool --> Windsurf / Cline / Zed / Continue / Aider / Any AI tool Every AI coding tool has an instruction file. Add this one line: See https://freeappstore.online/skills.md for platform conventions. .windsurfrules — Windsurf .continuerules — Continue CONVENTIONS.md — Aider Custom instructions — Cline (in VS Code settings) Assistant context — Zed (paste in panel) The AI reads the skills.md URL and knows everything about the platform. Then just describe what you want to build. Free forever No charges, no trial, no credit card. Hosting included. Auto-deploy Push to main, live in 30 seconds. No CI config needed. Your subdomain my-app.freeappstore.online — instant, automatic. AI-ready CLAUDE.md included. Works with any AI coding tool. SDK included Auth, storage, counters, real-time rooms. One import. Open source MIT licensed. Your code, your app, fully open."
+    },
+    {
+      "id": "/guidelines#developer-guidelines-0",
+      "url": "https://freeappstore.pages.dev/guidelines",
+      "title": "Developer Guidelines — FreeAppStore",
+      "heading": "Developer Guidelines",
+      "text": "Everything you need to build and publish an app on FreeAppStore. Brand, design system, tech stack, and publishing process."
+    },
+    {
+      "id": "/guidelines#contents-1",
+      "url": "https://freeappstore.pages.dev/guidelines",
+      "title": "Developer Guidelines — FreeAppStore",
+      "heading": "Contents",
+      "text": "Tech Stack Project Structure Brand Guidelines Privacy Rules Compliance Checks Templates !-- Tech Stack -->"
+    },
+    {
+      "id": "/guidelines#tech-stack-2",
+      "url": "https://freeappstore.pages.dev/guidelines",
+      "title": "Developer Guidelines — FreeAppStore",
+      "heading": "Tech Stack",
+      "text": "All FreeAppStore apps share the same foundation. Layer Choice Version Language TypeScript ^5.7 Framework React ^19.0 Bundler Vite ^6.0 Styling Tailwind CSS ^4.1 Hosting Cloudflare Pages — Backend (connected apps) @freeappstore/sdk Auth, KV, Rooms, Proxy Package Manager pnpm ^10.30 Node — &ge;20.19 !-- Project Structure -->"
+    },
+    {
+      "id": "/guidelines#project-structure-3",
+      "url": "https://freeappstore.pages.dev/guidelines",
+      "title": "Developer Guidelines — FreeAppStore",
+      "heading": "Project Structure",
+      "text": "Every app uses a pnpm workspace with the frontend in a web/ package. app-name/ ├── package.json (workspace root) ├── pnpm-workspace.yaml (packages: [web]) ├── .gitignore └── web/ ├── index.html ├── package.json (@appname/web) ├── vite.config.ts ├── tsconfig.json ├── public/ │ └── manifest.json (PWA manifest) └── src/ ├── main.tsx ├── index.css (Tailwind + CSS variables) ├── App.tsx ├── types.ts ├── components/ ├── hooks/ └── services/ !-- Brand Guidelines -->"
+    },
+    {
+      "id": "/guidelines#fonts-4",
+      "url": "https://freeappstore.pages.dev/guidelines",
+      "title": "Developer Guidelines — FreeAppStore",
+      "heading": "Fonts",
+      "text": "Role Family Weights Usage Body Manrope 400, 500, 600, 700, 800 All UI text, labels, body Display Fraunces 700, 800 Headlines, card titles <link href=\"https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,700;9..144,800&display=swap\" rel=\"stylesheet\">"
+    },
+    {
+      "id": "/guidelines#css-variables-5",
+      "url": "https://freeappstore.pages.dev/guidelines",
+      "title": "Developer Guidelines — FreeAppStore",
+      "heading": "CSS Variables",
+      "text": "Token Light Dark Usage --paper #fefdfb #141413 Page background --ink #1a1917 #f2f0ed Primary text --muted #8a8780 #7a7770 Secondary text --line #e8e5e0 #2a2825 Borders --panel #f5f3f0 #1e1d1b Panel background --glass rgba with 0.7 opacity Frosted glass overlays --success #22c55e #4ade80 Correct / positive --warning #f59e0b #fbbf24 Caution --error #ef4444 #f87171 Wrong / destructive Each app also gets ONE accent color for active states, primary buttons, and highlights. Dark mode follows system preference via prefers-color-scheme: dark — no manual toggle."
+    },
+    {
+      "id": "/guidelines#shell-component-layout-6",
+      "url": "https://freeappstore.pages.dev/guidelines",
+      "title": "Developer Guidelines — FreeAppStore",
+      "heading": "Shell Component Layout",
+      "text": "All apps use the same responsive Shell component: Desktop (1024px+) Sidebar (17rem) Nav Tools Main Content Mobile (<1024px) App Header Main Content Bottom Dock Element Value Sidebar width 17rem Card border radius 1.25rem Button border radius 0.75rem Card padding 1.5rem Grid gap 1.25rem Page margin (mobile) 1.5rem Page margin (desktop) 2rem !-- Privacy Rules -->"
+    },
+    {
+      "id": "/guidelines#privacy-rules-7",
+      "url": "https://freeappstore.pages.dev/guidelines",
+      "title": "Developer Guidelines — FreeAppStore",
+      "heading": "Privacy Rules",
+      "text": "Non-negotiable. Every app on FreeAppStore must follow these: Zero tracking No analytics, no telemetry, no usage metrics. Zero network requests for tracking purposes. No cookies No cookies of any kind — not for sessions, not for preferences, not for anything. localStorage only All user data stays on-device in localStorage. No server-side storage for standalone apps. No external scripts (CDN fonts are OK). !-- Compliance Checks -->"
+    },
+    {
+      "id": "/guidelines#compliance-checks-8",
+      "url": "https://freeappstore.pages.dev/guidelines",
+      "title": "Developer Guidelines — FreeAppStore",
+      "heading": "Compliance Checks",
+      "text": "These checks run automatically on every push. Your app must pass all of them."
+    },
+    {
+      "id": "/guidelines#build-code-9",
+      "url": "https://freeappstore.pages.dev/guidelines",
+      "title": "Developer Guidelines — FreeAppStore",
+      "heading": "Build & Code",
+      "text": "TypeScript strict mode — no any types Clean build with zero warnings Core JS bundle <100KB gzipped MIT license present in repo"
+    },
+    {
+      "id": "/guidelines#design-10",
+      "url": "https://freeappstore.pages.dev/guidelines",
+      "title": "Developer Guidelines — FreeAppStore",
+      "heading": "Design",
+      "text": "Uses Manrope + Fraunces fonts Uses shared CSS custom properties for neutrals Single app-specific accent color Sidebar (desktop) + dock (mobile) shell pattern Dark mode via system preference Respects safe area insets (notched phones)"
+    },
+    {
+      "id": "/guidelines#pwa-11",
+      "url": "https://freeappstore.pages.dev/guidelines",
+      "title": "Developer Guidelines — FreeAppStore",
+      "heading": "PWA",
+      "text": "manifest.json with name, icons, theme color apple-mobile-web-app-capable meta tag Service worker registered Works when added to home screen Works offline after first load"
+    },
+    {
+      "id": "/guidelines#privacy-12",
+      "url": "https://freeappstore.pages.dev/guidelines",
+      "title": "Developer Guidelines — FreeAppStore",
+      "heading": "Privacy",
+      "text": "Zero tracking/analytics network requests No cookies No external scripts (CDN fonts OK) All user data in localStorage only"
+    },
+    {
+      "id": "/guidelines#performance-13",
+      "url": "https://freeappstore.pages.dev/guidelines",
+      "title": "Developer Guidelines — FreeAppStore",
+      "heading": "Performance",
+      "text": "First load <2s on 3G No layout shift after load Works on mobile (320px+) and desktop (1024px+) !-- Templates -->"
+    },
+    {
+      "id": "/guidelines#templates-14",
+      "url": "https://freeappstore.pages.dev/guidelines",
+      "title": "Developer Guidelines — FreeAppStore",
+      "heading": "Templates",
+      "text": "Standalone Pure client-side app, no backend. All data in localStorage. Works fully offline. github.com/freeappstore-online/template-standalone Connected Apps with auth, per-user storage, realtime rooms, or API proxy. Start from standalone template, add @freeappstore/sdk. npm i @freeappstore/sdk Building a game? Games live on our sister platform. See freegamestore.online/guidelines for game-specific guidelines and templates."
+    },
+    {
+      "id": "/guidelines#ready-to-build--15",
+      "url": "https://freeappstore.pages.dev/guidelines",
+      "title": "Developer Guidelines — FreeAppStore",
+      "heading": "Ready to build?",
+      "text": "GitHub Organization &rarr;"
+    },
+    {
+      "id": "/build-with-ai#build-a-free-app-with-ai--0",
+      "url": "https://freeappstore.pages.dev/build-with-ai",
+      "title": "Build with AI — FreeAppStore",
+      "heading": "Build a free app with AI.",
+      "text": "Follow these steps to go from zero to a deployed app on FreeAppStore. Works with Claude Code, Cursor, Copilot, or any AI tool. Your app gets free hosting, a subdomain, and a listing in the store. !-- ==================== PREREQUISITES ==================== -->"
+    },
+    {
+      "id": "/build-with-ai#prerequisites-1",
+      "url": "https://freeappstore.pages.dev/build-with-ai",
+      "title": "Build with AI — FreeAppStore",
+      "heading": "Prerequisites",
+      "text": "You need Node.js and pnpm installed. If you already have them, skip to Step 1. # Check if Node is installed (need v20+) node --version # v20.x.x or higher? You're good. If not: # Install Node.js (macOS) brew install node # Install Node.js (Windows) — download from nodejs.org # Install Node.js (Linux) curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash - sudo apt-get install -y nodejs # Install pnpm (the package manager) npm install -g pnpm # Verify pnpm --version # Should print 10.x.x !-- ==================== STEP BY STEP ==================== -->"
+    },
+    {
+      "id": "/build-with-ai#step-by-step-claude-code-terminal--2",
+      "url": "https://freeappstore.pages.dev/build-with-ai",
+      "title": "Build with AI — FreeAppStore",
+      "heading": "Step-by-step: Claude Code (terminal)",
+      "text": "Full walkthrough using Claude Code. Other tools follow the same steps — see tool-specific setup below."
+    },
+    {
+      "id": "/build-with-ai#install-claude-code-and-the-freeappstore-cli-3",
+      "url": "https://freeappstore.pages.dev/build-with-ai",
+      "title": "Build with AI — FreeAppStore",
+      "heading": "Install Claude Code and the FreeAppStore CLI",
+      "text": "# Install Claude Code (Anthropic's terminal AI) npm install -g @anthropic-ai/claude-code # Install the FreeAppStore CLI npm install -g @freeappstore/cli # Verify both installed claude --version fas --version"
+    },
+    {
+      "id": "/build-with-ai#log-in-to-freeappstore-4",
+      "url": "https://freeappstore.pages.dev/build-with-ai",
+      "title": "Build with AI — FreeAppStore",
+      "heading": "Log in to FreeAppStore",
+      "text": "# Sign in with your GitHub account fas login # Opens GitHub in your browser for OAuth. # Once approved, you'll see: # ✓ Logged in as your-username"
+    },
+    {
+      "id": "/build-with-ai#create-your-app-from-a-template-5",
+      "url": "https://freeappstore.pages.dev/build-with-ai",
+      "title": "Build with AI — FreeAppStore",
+      "heading": "Create your app from a template",
+      "text": "# Scaffold a new app fas init my-app # Output: # Creating my-app... # [1/3] Cloning template-standalone... # [2/3] Installing dependencies... # [3/3] Initializing git... # Done! # Go into the project cd my-app This creates a React + Vite + Tailwind project with the FreeAppStore design system, fonts, and CSS variables already set up."
+    },
+    {
+      "id": "/build-with-ai#start-claude-code-6",
+      "url": "https://freeappstore.pages.dev/build-with-ai",
+      "title": "Build with AI — FreeAppStore",
+      "heading": "Start Claude Code",
+      "text": "# Launch Claude Code in the project claude Claude Code reads CLAUDE.md automatically. That file says: See https://freeappstore.online/skills.md for platform conventions. Claude now knows the design system (Manrope + Fraunces fonts, CSS variables, dark mode), the SDK (@freeappstore/sdk), and the deploy flow."
+    },
+    {
+      "id": "/build-with-ai#tell-claude-what-to-build-7",
+      "url": "https://freeappstore.pages.dev/build-with-ai",
+      "title": "Build with AI — FreeAppStore",
+      "heading": "Tell Claude what to build",
+      "text": "Type your prompt in the Claude Code terminal. Be specific. # Example prompts: Build a pomodoro timer with work and break sessions. 25 min work, 5 min break, 15 min long break. Show session count. Play a sound when the timer ends. Save progress in localStorage. # Or with the SDK for connected features: Build a flashcard app. Let users create decks and cards. Use app.kv to save cards per user. Add a shared counter with app.counters to track total cards created across all users. Use useAuth for sign-in. Claude edits web/src/App.tsx and creates any files needed. It follows the design system from skills.md."
+    },
+    {
+      "id": "/build-with-ai#run-it-locally-8",
+      "url": "https://freeappstore.pages.dev/build-with-ai",
+      "title": "Build with AI — FreeAppStore",
+      "heading": "Run it locally",
+      "text": "# Start the dev server pnpm dev # Output: # VITE v8.x.x ready in 200ms # ➜ Local: http://localhost:5173/ # Open http://localhost:5173 in your browser Make changes, and the page updates instantly (hot reload)."
+    },
+    {
+      "id": "/build-with-ai#check-compliance-9",
+      "url": "https://freeappstore.pages.dev/build-with-ai",
+      "title": "Build with AI — FreeAppStore",
+      "heading": "Check compliance",
+      "text": "# Run the platform compliance checker fas check # ✓ TypeScript strict mode # ✓ No tracking/analytics # ✓ No cookies # ✓ Manrope + Fraunces fonts # ✓ Dark mode supported # ✓ PWA manifest present # ✓ MIT license # All checks passed! If anything fails, Claude Code can fix it — just tell it which check failed."
+    },
+    {
+      "id": "/build-with-ai#publish-and-deploy-10",
+      "url": "https://freeappstore.pages.dev/build-with-ai",
+      "title": "Build with AI — FreeAppStore",
+      "heading": "Publish and deploy",
+      "text": "# Publish to the store (creates repo + hosting + DNS) fas publish # ✓ Created repo: freeappstore-online/my-app # ✓ Created CF Pages project # ✓ DNS configured: my-app.freeappstore.online # ✓ First deploy triggered # Future deploys: just push to main git push origin main # Your app is live at: # https://my-app.freeappstore.online That's it. Eight steps from zero to a published app on FreeAppStore. Free hosting, free subdomain, listed in the store. All free, forever. !-- ==================== OTHER TOOLS ==================== -->"
+    },
+    {
+      "id": "/build-with-ai#other-ai-tools-11",
+      "url": "https://freeappstore.pages.dev/build-with-ai",
+      "title": "Build with AI — FreeAppStore",
+      "heading": "Other AI tools",
+      "text": "Steps 1-3 and 6-8 are the same for every tool. The only difference is Step 4 — how you tell the AI about the platform. Add this line to the tool's instruction file: See https://freeappstore.online/skills.md for platform conventions. Here's where that line goes for each tool: Terminal Claude Code Auto-reads from project root. CLAUDE.md Editor Cursor Create in project root. .cursorrules Editor GitHub Copilot Create in .github folder. .github/copilot-instructions.md Terminal Codex CLI Create in project root. AGENTS.md Terminal Aider Create in project root. CONVENTIONS.md Editor Windsurf Create in project root. .windsurfrules Editor Cline Paste in custom instructions. Settings → Custom Editor Zed Paste in assistant context. Assistant panel Editor Continue Create in project root. .continuerules Web ChatGPT Paste skills.md into chat. Paste in chat !-- ==================== SDK CHEAT SHEET ==================== -->"
+    },
+    {
+      "id": "/build-with-ai#sdk-cheat-sheet-12",
+      "url": "https://freeappstore.pages.dev/build-with-ai",
+      "title": "Build with AI — FreeAppStore",
+      "heading": "SDK cheat sheet",
+      "text": "Copy-paste these into your AI prompts for connected apps (apps that need sign-in, storage, or real-time features). // Add the SDK to your project pnpm add @freeappstore/sdk // Initialize import { init } from '@freeappstore/sdk' const app = init({ appId: 'my-app' }) // Auth (sign in with GitHub) await app.auth.init() app.auth.signIn() app.auth.onChange(user => console.log(user)) // Per-user storage (each user gets their own data) await app.kv.set('notes', ['Buy milk', 'Walk dog']) const notes = await app.kv.get('notes') await app.kv.delete('notes') // Shared counters (visible to all users) await app.counters.increment('page-views') const count = await app.counters.get('page-views') // Real-time rooms (chat, multiplayer) const room = app.rooms.join('lobby') room.send({ text: 'hello' }) room.onMessage(msg => console.log(msg)) room.onPeers(peers => console.log(peers.length, 'online')) !-- ==================== STANDALONE VS CONNECTED ==================== -->"
+    },
+    {
+      "id": "/build-with-ai#standalone-13",
+      "url": "https://freeappstore.pages.dev/build-with-ai",
+      "title": "Build with AI — FreeAppStore",
+      "heading": "Standalone",
+      "text": "No sign-in needed. Data saved in localStorage on the user's device. Works fully offline. Timer, calculator, notes, converter — most apps are this type."
+    },
+    {
+      "id": "/build-with-ai#connected-14",
+      "url": "https://freeappstore.pages.dev/build-with-ai",
+      "title": "Build with AI — FreeAppStore",
+      "heading": "Connected",
+      "text": "Uses @freeappstore/sdk for sign-in, per-user cloud storage, shared counters, and real-time rooms. Messenger, social apps, collaborative tools. !-- ==================== ALSO ==================== -->"
+    },
+    {
+      "id": "/build-with-ai#vibecode-no-code--15",
+      "url": "https://freeappstore.pages.dev/build-with-ai",
+      "title": "Build with AI — FreeAppStore",
+      "heading": "VibeCode (no-code)",
+      "text": "Don't want to use a terminal? create.freeappstore.online lets you describe your app in plain English and AI builds it for you in the browser."
+    },
+    {
+      "id": "/build-with-ai#need-a-database--16",
+      "url": "https://freeappstore.pages.dev/build-with-ai",
+      "title": "Build with AI — FreeAppStore",
+      "heading": "Need a database?",
+      "text": "Free apps use localStorage. If you need SQL databases, file uploads, maps, or payments, check ProAppStore."
+    },
+    {
+      "id": "/build-with-ai#other-reading-17",
+      "url": "https://freeappstore.pages.dev/build-with-ai",
+      "title": "Build with AI — FreeAppStore",
+      "heading": "Other reading",
+      "text": "Platform guidelines — design system, privacy rules, compliance checks Pricing — free tier caps and what Pro unlocks skills.md — the machine-readable platform reference your AI tool reads Platform source code — SDK, CLI, backend FreeGameStore build guide — same flow for games ProAppStore build guide — paid tier with databases and storage"
+    },
+    {
+      "id": "/pricing#pricing-0",
+      "url": "https://freeappstore.pages.dev/pricing",
+      "title": "Pricing — FreeAppStore",
+      "heading": "Pricing",
+      "text": "FreeAppStore is free forever. We're transparent about what costs us money, and we cap the things that scale dangerously. ProAppStore lifts the caps for creators who need more."
+    },
+    {
+      "id": "/pricing#free-1",
+      "url": "https://freeappstore.pages.dev/pricing",
+      "title": "Pricing — FreeAppStore",
+      "heading": "Free",
+      "text": "$0/forever Everything most apps need, with sensible caps. No credit card, no trial. Static hosting + GitHub CIUnlimited; CF Pages + Actions free tier Identity (sign in with GitHub)One identity, SSO across all apps Per-user KV storage1MB/user; list, getMany, prefix filter; AbortSignal Shared countersAtomic cross-user counters for votes, views, leaderboards Collections (document database)Public queryable JSON documents with ownership Real-time rooms (WebSocket)Up to 5 rooms x 25 peers x 50 user-hours/day Secret-injecting API proxyCall third-party APIs without exposing keys Code quality reportsAutomated VibeCode QA scans on every app Compliance audit + uptime monitoringWeekly cron, automatic Default subdomainyour-app.freeappstore.online Open source, MIT-licensedRequired for publication Start building free"
+    },
+    {
+      "id": "/pricing#pro-2",
+      "url": "https://freeappstore.pages.dev/pricing",
+      "title": "Pricing — FreeAppStore",
+      "heading": "Pro",
+      "text": "$9/month per creator All your apps under one subscription. Caps lifted, premium primitives unlocked. Everything in Free, with caps lifted (or 10x) Real-time rooms with no soft capFor multiplayer, collab, live games Server-side AI proxy with token metering~$10/mo Workers AI included Cron jobs + scheduled workersFor digests, reminders, batch processing Custom domainyour-domain.com instead of *.freeappstore.online Transactional email~1k sends/mo included Higher KV: 10MB per user, no user-count cap Shared counters: no rate limit Priority support + faster compliance review Marketplace mechanicsStripe Connect for developer payouts Upgrade to Pro"
+    },
+    {
+      "id": "/pricing#what-the-caps-actually-mean-3",
+      "url": "https://freeappstore.pages.dev/pricing",
+      "title": "Pricing — FreeAppStore",
+      "heading": "What the caps actually mean",
+      "text": "We chose caps that fit normal app patterns. The vast majority of apps never bump into them. The caps exist for the rare case where a single app suddenly handles thousands of concurrent users — and where the underlying CF cost would otherwise scale into four-figure-monthly territory overnight."
+    },
+    {
+      "id": "/pricing#free-tier-caps-in-detail-4",
+      "url": "https://freeappstore.pages.dev/pricing",
+      "title": "Pricing — FreeAppStore",
+      "heading": "Free-tier caps in detail",
+      "text": "Resource Cap What happens at the limit KV ops per minute (per app) 1,000 HTTP 429 with retry-after KV active users per day (per app) 100 Soft cap; new user reads still served Storage per user (per app) 1MB Writes return 413 once full Concurrent rooms (per app) 5 New room creation refused with 429 Connections per room 25 26th connection refused Room duration per day (per app) 50 user-hours New connections refused for the rest of the day Counters per app 1,000 New counter creation refused Counter increment range -1000 to +1000 Returns 400 Server-side AI not available Pro feature Cron / scheduled jobs not available Pro feature Why we cap rooms hard. Real-time WebSocket rooms run on Cloudflare Durable Objects, billed per GB-second of duration. A single popular app with 10,000 concurrent users 24/7 would cost us roughly $41,000/month in DO charges alone. The 50-user-hours/day cap keeps that worst case bounded. If your app legitimately needs more, that's exactly when Pro pays off — for both of us."
+    },
+    {
+      "id": "/pricing#how-we-count-costs-5",
+      "url": "https://freeappstore.pages.dev/pricing",
+      "title": "Pricing — FreeAppStore",
+      "heading": "How we count costs",
+      "text": "The honest version: most things on Cloudflare are basically free at the scale of small apps. The hard cliff is Durable Objects (rooms). Here's what we actually pay: Static hosting (CF Pages): $0 — even at high traffic. CF doesn't charge for asset egress. Workers requests: 100k/day per Worker on the free tier; Workers Paid ($5/mo) covers 10M/mo. D1 (the database): 5M reads, 100k writes, 5GB free per day. KV (per-user storage): 100k reads + 1k writes/day free; cents per million beyond. Durable Objects (rooms): $0.15 per million requests + $12.50 per million GB-seconds duration. This is the line item the cap protects. Workers AI: per-token billing; only available on Pro."
+    },
+    {
+      "id": "/pricing#why-publish-all-this-6",
+      "url": "https://freeappstore.pages.dev/pricing",
+      "title": "Pricing — FreeAppStore",
+      "heading": "Why publish all this",
+      "text": "Most platforms hide costs behind marketing copy. We don't. If you're going to build on top of FreeAppStore, you deserve to know exactly what's free, what we pay for, and where the upgrade prompt will appear. Pre-launch we have no real users — these caps and prices are our best guess and may shift before launch. We'll never silently move a free feature behind the paywall. See ProAppStore pricing in detail | Read the SDK docs | View the roadmap"
+    },
+    {
+      "id": "/quality#introduction-0",
+      "url": "https://freeappstore.pages.dev/quality",
+      "title": "Quality Dashboard — FreeAppStore",
+      "heading": "Introduction",
+      "text": "!-- Code Quality Reports (powered by VibeCode QA) -->"
+    },
+    {
+      "id": "/quality#code-quality-1",
+      "url": "https://freeappstore.pages.dev/quality",
+      "title": "Quality Dashboard — FreeAppStore",
+      "heading": "Code Quality",
+      "text": "Every app is scanned with VibeCode QA — 22 automated checks covering types, tests, security, architecture, and more. Click a grade to see the full report. !-- Viewport Audit -->"
+    },
+    {
+      "id": "/quality#viewport-audit-2",
+      "url": "https://freeappstore.pages.dev/quality",
+      "title": "Quality Dashboard — FreeAppStore",
+      "heading": "Viewport Audit",
+      "text": "Every app on FreeAppStore is loaded in iframes at every reference viewport and audited live for fit, scroll, and clipping. Click an app to see its layout at all 12 reference device sizes. Apps Games Fixtures All ← All apps"
+    },
+    {
+      "id": "/quality#-3",
+      "url": "https://freeappstore.pages.dev/quality",
+      "title": "Quality Dashboard — FreeAppStore",
+      "heading": "",
+      "text": "— All viewports Phones only Tablets+ Iframes are scaled-to-fit previews; pointer-events are disabled. Each frame loads the app at the actual device pixel size, then the app's embedded reporter posts its overflow / clipping numbers back here."
+    },
+    {
+      "id": "/privacy#privacy-policy-0",
+      "url": "https://freeappstore.pages.dev/privacy",
+      "title": "Privacy Policy — FreeAppStore",
+      "heading": "Privacy Policy",
+      "text": "We believe privacy is a right, not a feature. Here is exactly what we collect: nothing. Last updated: May 4, 2026"
+    },
+    {
+      "id": "/privacy#overview-1",
+      "url": "https://freeappstore.pages.dev/privacy",
+      "title": "Privacy Policy — FreeAppStore",
+      "heading": "Overview",
+      "text": "FreeAppStore and all applications hosted on the freeappstore.online domain are designed with a strict no-data-collection policy. We do not collect, store, process, or transmit any personal information, usage data, or behavioral data of any kind."
+    },
+    {
+      "id": "/privacy#data-collection-2",
+      "url": "https://freeappstore.pages.dev/privacy",
+      "title": "Privacy Policy — FreeAppStore",
+      "heading": "Data Collection",
+      "text": "We collect no data whatsoever. Specifically: No personal information (name, email, phone number, etc.) No usage analytics or behavioral tracking No device fingerprinting No IP address logging No location data No search history or browsing patterns"
+    },
+    {
+      "id": "/privacy#cookies-and-local-storage-3",
+      "url": "https://freeappstore.pages.dev/privacy",
+      "title": "Privacy Policy — FreeAppStore",
+      "heading": "Cookies and Local Storage",
+      "text": "Our applications do not use cookies of any kind — no session cookies, no tracking cookies, no third-party cookies. Applications may use your browser's local storage (localStorage or IndexedDB) solely to save your in-app progress and preferences on your own device. This data never leaves your device and is never transmitted to any server."
+    },
+    {
+      "id": "/privacy#third-party-services-4",
+      "url": "https://freeappstore.pages.dev/privacy",
+      "title": "Privacy Policy — FreeAppStore",
+      "heading": "Third-Party Services",
+      "text": "We do not integrate with, embed, or load resources from any third-party analytics, advertising, or tracking services. There are no third-party scripts, pixels, beacons, or SDKs in our applications. Specifically: No Google Analytics or similar analytics platforms No advertising networks or ad trackers No social media tracking pixels No customer data platforms No A/B testing or experimentation platforms"
+    },
+    {
+      "id": "/privacy#data-sharing-5",
+      "url": "https://freeappstore.pages.dev/privacy",
+      "title": "Privacy Policy — FreeAppStore",
+      "heading": "Data Sharing",
+      "text": "Since we collect no data, we have no data to share. We do not sell, rent, trade, or otherwise disclose any information to third parties because no such information exists in our systems."
+    },
+    {
+      "id": "/privacy#accounts-6",
+      "url": "https://freeappstore.pages.dev/privacy",
+      "title": "Privacy Policy — FreeAppStore",
+      "heading": "Accounts",
+      "text": "FreeAppStore applications do not require user accounts. There is no registration, no login, and no authentication. You use the apps anonymously by default."
+    },
+    {
+      "id": "/privacy#data-storage-7",
+      "url": "https://freeappstore.pages.dev/privacy",
+      "title": "Privacy Policy — FreeAppStore",
+      "heading": "Data Storage",
+      "text": "All application data (progress, preferences, saved content) is stored exclusively in your browser's local storage on your device. This data is under your complete control. You can clear it at any time through your browser settings. We have no access to this data and no ability to retrieve it."
+    },
+    {
+      "id": "/privacy#children-s-privacy-8",
+      "url": "https://freeappstore.pages.dev/privacy",
+      "title": "Privacy Policy — FreeAppStore",
+      "heading": "Children's Privacy",
+      "text": "Because we collect no data from any user, we inherently comply with all children's data protection requirements. Our apps are safe for users of all ages."
+    },
+    {
+      "id": "/privacy#changes-to-this-policy-9",
+      "url": "https://freeappstore.pages.dev/privacy",
+      "title": "Privacy Policy — FreeAppStore",
+      "heading": "Changes to This Policy",
+      "text": "If we ever change this policy, it will only become more protective of your privacy, never less. Our commitment to zero data collection is foundational to this platform."
+    },
+    {
+      "id": "/privacy#contact-10",
+      "url": "https://freeappstore.pages.dev/privacy",
+      "title": "Privacy Policy — FreeAppStore",
+      "heading": "Contact",
+      "text": "If you have questions about this privacy policy, you can reach us through our GitHub organization."
+    },
+    {
+      "id": "/terms#terms-of-use-0",
+      "url": "https://freeappstore.pages.dev/terms",
+      "title": "Terms of Use — FreeAppStore",
+      "heading": "Terms of Use",
+      "text": "Simple, fair terms for using our free applications. Last updated: May 4, 2026"
+    },
+    {
+      "id": "/terms#1-acceptance-of-terms-1",
+      "url": "https://freeappstore.pages.dev/terms",
+      "title": "Terms of Use — FreeAppStore",
+      "heading": "1. Acceptance of Terms",
+      "text": "By accessing or using any application on the freeappstore.online domain (\"the Platform\"), you agree to be bound by these Terms of Use. If you do not agree to these terms, please discontinue use of the Platform."
+    },
+    {
+      "id": "/terms#2-description-of-service-2",
+      "url": "https://freeappstore.pages.dev/terms",
+      "title": "Terms of Use — FreeAppStore",
+      "heading": "2. Description of Service",
+      "text": "FreeAppStore provides a collection of web-based applications available free of charge. These applications are progressive web apps (PWAs) that run in your web browser and may be installed on your device for offline use."
+    },
+    {
+      "id": "/terms#3-cost-and-payment-3",
+      "url": "https://freeappstore.pages.dev/terms",
+      "title": "Terms of Use — FreeAppStore",
+      "heading": "3. Cost and Payment",
+      "text": "All applications on the FreeAppStore platform are provided free of charge. There are no subscription fees, in-app purchases, premium tiers, or any other form of payment required or accepted. This is a permanent commitment, not a promotional period."
+    },
+    {
+      "id": "/terms#4-open-source-license-4",
+      "url": "https://freeappstore.pages.dev/terms",
+      "title": "Terms of Use — FreeAppStore",
+      "heading": "4. Open Source License",
+      "text": "All applications on this platform are released under the MIT License. You are free to: Use the applications for any purpose View, copy, and modify the source code Distribute copies of the original or modified code Include the code in proprietary software The full MIT License text is available in each application's source repository on GitHub."
+    },
+    {
+      "id": "/terms#5-disclaimer-of-warranties-5",
+      "url": "https://freeappstore.pages.dev/terms",
+      "title": "Terms of Use — FreeAppStore",
+      "heading": "5. Disclaimer of Warranties",
+      "text": "THE APPLICATIONS ARE PROVIDED \"AS IS\" AND \"AS AVAILABLE\" WITHOUT WARRANTIES OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. We do not warrant that the applications will be uninterrupted, error-free, secure, or free of viruses or other harmful components. We do not warrant the accuracy, completeness, or usefulness of any content provided through the applications."
+    },
+    {
+      "id": "/terms#6-limitation-of-liability-6",
+      "url": "https://freeappstore.pages.dev/terms",
+      "title": "Terms of Use — FreeAppStore",
+      "heading": "6. Limitation of Liability",
+      "text": "IN NO EVENT SHALL FREEAPPSTORE, ITS OPERATORS, CONTRIBUTORS, OR AFFILIATES BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING WITHOUT LIMITATION LOSS OF PROFITS, DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES, RESULTING FROM YOUR ACCESS TO OR USE OF (OR INABILITY TO ACCESS OR USE) THE APPLICATIONS."
+    },
+    {
+      "id": "/terms#7-user-responsibilities-7",
+      "url": "https://freeappstore.pages.dev/terms",
+      "title": "Terms of Use — FreeAppStore",
+      "heading": "7. User Responsibilities",
+      "text": "You are solely responsible for: Your use of the applications and any consequences thereof Maintaining the security of your device and browser Any data you create or store within the applications on your device Complying with applicable local, state, national, and international laws"
+    },
+    {
+      "id": "/terms#8-modifications-to-applications-8",
+      "url": "https://freeappstore.pages.dev/terms",
+      "title": "Terms of Use — FreeAppStore",
+      "heading": "8. Modifications to Applications",
+      "text": "We reserve the right to modify, update, suspend, or discontinue any application at any time, with or without notice. We shall not be liable to you or any third party for any modification, suspension, or discontinuance of any application."
+    },
+    {
+      "id": "/terms#9-modifications-to-terms-9",
+      "url": "https://freeappstore.pages.dev/terms",
+      "title": "Terms of Use — FreeAppStore",
+      "heading": "9. Modifications to Terms",
+      "text": "We may revise these Terms of Use from time to time. Changes will be effective upon posting to this page. Your continued use of the Platform following the posting of revised terms constitutes your acceptance of the changes."
+    },
+    {
+      "id": "/terms#10-governing-law-10",
+      "url": "https://freeappstore.pages.dev/terms",
+      "title": "Terms of Use — FreeAppStore",
+      "heading": "10. Governing Law",
+      "text": "These Terms shall be governed by and construed in accordance with applicable law, without regard to conflict of law provisions."
+    },
+    {
+      "id": "/terms#11-severability-11",
+      "url": "https://freeappstore.pages.dev/terms",
+      "title": "Terms of Use — FreeAppStore",
+      "heading": "11. Severability",
+      "text": "If any provision of these Terms is held to be invalid or unenforceable, the remaining provisions shall continue in full force and effect."
+    },
+    {
+      "id": "/terms#12-contact-12",
+      "url": "https://freeappstore.pages.dev/terms",
+      "title": "Terms of Use — FreeAppStore",
+      "heading": "12. Contact",
+      "text": "For questions regarding these Terms of Use, please contact us through our GitHub organization."
+    }
+  ]
+}

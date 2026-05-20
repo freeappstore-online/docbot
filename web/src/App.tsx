@@ -1,14 +1,27 @@
+import { useEffect, useState } from 'react'
 import { Shell } from './components/Shell.tsx'
+import { Chat } from './components/Chat.tsx'
+import { KeyPrompt } from './components/KeyPrompt.tsx'
+import { getStoredKey } from './lib/anthropic'
 
 export default function App() {
+  const [hasKey, setHasKey] = useState(false)
+  const [checked, setChecked] = useState(false)
+
+  useEffect(() => {
+    setHasKey(!!getStoredKey())
+    setChecked(true)
+  }, [])
+
+  if (!checked) return <Shell><div className="flex-1" /></Shell>
+
   return (
     <Shell>
-      <div className="flex flex-1 items-center justify-center">
-        <div className="text-center">
-          <h1 className="display-font text-3xl font-bold text-[var(--ink)]">docbot</h1>
-          <p className="mt-3 text-[var(--muted)]">Edit <code>web/src/App.tsx</code> to start.</p>
-        </div>
-      </div>
+      {hasKey ? (
+        <Chat onResetKey={() => setHasKey(false)} />
+      ) : (
+        <KeyPrompt onSaved={() => setHasKey(true)} />
+      )}
     </Shell>
   )
 }

@@ -36,12 +36,14 @@ export default defineConfig({
       manifest: {
         name: 'docbot',
         short_name: 'docbot',
-        description: 'Free docbot app — part of FreeAppStore',
+        description: 'Ask the FreeAppStore docs — part of FreeAppStore',
         start_url: '/',
         display: 'standalone',
         background_color: '#ffffff',
         theme_color: '#111111',
         orientation: 'any',
+        // @ts-expect-error FreeAppStore extension; not in vite-plugin-pwa types.
+        min_viewport_width: 360,
         icons: [
           { src: '/icon-192.png', sizes: '192x192', type: 'image/png', purpose: 'any maskable' },
           { src: '/icon-512.png', sizes: '512x512', type: 'image/png', purpose: 'any maskable' },
