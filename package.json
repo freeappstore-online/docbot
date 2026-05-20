@@ -1,0 +1,13 @@
+{
+  "name": "docbot",
+  "private": true,
+  "packageManager": "pnpm@10.30.3",
+  "engines": { "node": ">=22" },
+  "pnpm": { "onlyBuiltDependencies": ["esbuild"] },
+  "scripts": {
+    "dev": "pnpm --filter @docbot/web dev",
+    "build": "pnpm --filter @docbot/web build",
+    "preview": "pnpm --filter @docbot/web preview",
+    "typecheck": "pnpm --filter @docbot/web exec tsc -b"
+  }
+}
