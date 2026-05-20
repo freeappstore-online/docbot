@@ -1,13 +1,10 @@
 import { useEffect, useRef, useState } from 'react'
 import { askDocbot, clearStoredKey, getStoredKey, type ChatTurn } from '../lib/anthropic'
-import { retrieve, type Chunk } from '../lib/kb'
+import { retrieve } from '../lib/kb'
 import { renderMarkdown } from '../lib/markdown'
+import { clearHistory, loadHistory, saveHistory, type StoredMessage } from '../lib/persist'
 
-interface Message extends ChatTurn {
-  id: string
-  sources?: Chunk[]
-  error?: string
-}
+type Message = StoredMessage
 
 const STARTERS = [
   'What is FreeAppStore?',
@@ -17,7 +14,7 @@ const STARTERS = [
 ]
 
 export function Chat({ onResetKey }: { onResetKey: () => void }) {
-  const [messages, setMessages] = useState<Message[]>([])
+  const [messages, setMessages] = useState<Message[]>(() => loadHistory())
   const [draft, setDraft] = useState('')
   const [busy, setBusy] = useState(false)
   const [showingKeyPanel, setShowingKeyPanel] = useState(false)
@@ -25,6 +22,10 @@ export function Chat({ onResetKey }: { onResetKey: () => void }) {
 
   useEffect(() => {
     scrollerRef.current?.scrollTo({ top: scrollerRef.current.scrollHeight, behavior: 'smooth' })
+  }, [messages])
+
+  useEffect(() => {
+    saveHistory(messages)
   }, [messages])
 
   async function send(text: string) {
@@ -74,6 +75,7 @@ export function Chat({ onResetKey }: { onResetKey: () => void }) {
 
   function resetSession() {
     setMessages([])
+    clearHistory()
   }
 
   function resetKey() {
