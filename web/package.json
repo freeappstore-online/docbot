@@ -12,6 +12,7 @@
     "coverage": "vitest run --coverage"
   },
   "dependencies": {
+    "@freeappstore/sdk": "^0.16.39",
     "minisearch": "^7.2.0",
     "react": "^19.2.5",
     "react-dom": "^19.2.5"
